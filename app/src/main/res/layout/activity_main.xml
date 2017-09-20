@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context="com.example.david.restaurants.MainActivity">
+    tools:context="com.example.david.restaurants.UI.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -15,29 +15,30 @@
         android:scaleType="centerCrop" />
 
 
+    <Button
+        android:id="@+id/savedRestaurantsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Restaurants"
+        android:background="@color/colorPrimary"
+
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/findRestaurantsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MyRestaurants"
-        android:textSize="40sp"
+        android:text="Restaurant Finder"
+        android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:id="@+id/appNameTextView" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/locationEditText"
-        android:background="@color/colorTextIcons"
-        android:layout_above="@+id/findRestaurantsButton"
-        android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:hint="Enter Zip Code"
-        android:layout_centerHorizontal="true" />
 
 
 
@@ -49,6 +50,10 @@
         android:background="@color/colorPrimary"
         android:textColor="@color/colorTextIcons"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp" />
+
 </RelativeLayout>
 

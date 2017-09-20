@@ -3,6 +3,8 @@ package com.example.david.restaurants;
 import android.os.Build;
 import android.widget.ListView;
 
+import com.example.david.restaurants.UI.RestaurantsActivity;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

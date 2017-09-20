@@ -4,7 +4,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.widget.TextView;
 
-import junit.framework.Assert;
+import com.example.david.restaurants.UI.MainActivity;
+import com.example.david.restaurants.UI.RestaurantsActivity;
 
 import org.junit.Before;
 import org.junit.Test;

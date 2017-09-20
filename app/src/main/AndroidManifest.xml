@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.david.restaurants">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,21 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:theme="@style/NoActionBarTheme">
+        <activity
+            android:name=".UI.MainActivity">
+
+        </activity>
+        <activity android:name=".UI.RestaurantsActivity">
+            android:name=".RestaurantsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.david.restaurants.UI.MainActivity" />
+        </activity>
+        <activity android:name=".UI.RestaurantDetailActivity" />
+        <activity android:name=".UI.SavedRestaurantListActivity" />
+        <activity android:name=".UI.CreateAccountActivity" />
+        <activity android:name=".UI.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".RestaurantsActivity">
-            android:name=".RestaurantsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.david.restaurants.MainActivity">
-            </meta-data>
-        </activity>
     </application>
-
 </manifest>
